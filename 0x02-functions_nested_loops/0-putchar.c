@@ -1,16 +1,19 @@
-#include <unistd.h>
 #include <main.h>
 /**
  * _putchar - A program that prints _putchar
- * Return: 1 (Success)
- * Onerror, -1
+ * Return: 0 (Success)
  */
-int _putchar(char ch)
-{
-return (write(1, &ch, 1));
-}
 
 int main(void)
 {
+_putchar("_");
+_putchar("p");
+_putchar("u");
+_putchar("t");
+_putchar("c");
+_putchar("h");
+_putchar("a");
+_putchar("r");
+
 return (0);
 }
