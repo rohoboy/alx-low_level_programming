@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <main.h>
 /**
  * _putchar - A program that prints _putchar
  * Return: 1 (Success)
