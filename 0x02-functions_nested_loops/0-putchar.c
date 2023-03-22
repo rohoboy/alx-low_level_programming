@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
  * _putchar - A program that prints _putchar
  * Return: 0 (Success)
+ * Onerror, -1
  */
-int _putchar(void)
+int _putchar(char ch)
 {
-printf("_putchar\n");
-return (void);
+return (write(0, &ch, 0));
 }
