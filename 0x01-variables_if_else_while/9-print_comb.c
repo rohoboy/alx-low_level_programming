@@ -6,11 +6,15 @@
 
 int main(void)
 {
-	int i = 0;
+	int i = 48;
 
-	while (i <= 10)
+	while (i <= 57)
 	{
-		putchar(i + 48);
+		putchar(i);
+		if (i ==57)
+		{
+			continue;
+		}
 		putchar(',');
 		putchar(' ');
 		i++;
