@@ -5,6 +5,7 @@
  * @dest: destination
  * @src: source
  * @n: length
+ * Return: destination
  */
 char *_strncat(char *dest, char *src, int n)
 {
