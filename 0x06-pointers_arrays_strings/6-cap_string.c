@@ -1,33 +1,33 @@
 #include "main.h"
 /**
  * cap_string -Entry point
- * @n: string
- * Return: string
+ * @str: string
+ * Return: pointer
  */
-char *cap_string(char *n)
+char *cap_string(char *str)
 {
 	int i = 0;
 
-	while (n[i])
+	while (str[i])
 	{
-		while (!(n[i] >= 'a' && n[i] <= 'z'))
+		while (!(str[i] >= 'a' && str[i] <= 'z'))
 			i++;
-		if (n[i] == ' ' ||
-		n[i] == '\t' ||
-		n[i] == '\n' ||
-		n[i] == ',' ||
-		n[i] == '.' ||
-		n[i] == ';' ||
-		n[i] == '?' ||
-		n[i] == '!' ||
-		n[i] == '"' ||
-		n[i] == '(' ||
-		n[i] == ')' ||
-		n[i] == '{' ||
-		n[i] == '}' ||
+		if (str[i] == ' ' ||
+		str[i] == '\t' ||
+		str[i] == '\n' ||
+		str[i] == ',' ||
+		str[i] == '.' ||
+		str[i] == ';' ||
+		str[i] == '?' ||
+		str[i] == '!' ||
+		str[i] == '"' ||
+		str[i] == '(' ||
+		str[i] == ')' ||
+		str[i] == '{' ||
+		str[i] == '}' ||
 		i  == 0)
-			n[i] -= 32;
+			str[i] -= 32;
 		i++;
 	}
-	return (n);
+	return (str);
 }
