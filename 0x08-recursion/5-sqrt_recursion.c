@@ -19,7 +19,7 @@ int _sqrt_recursion(int n)
 int _sqrt_wrapper(int n, int i)
 {
 	int sqroot = i * i;
-	
+
 	if (sqroot > n)
 	{
 		return (-1);
