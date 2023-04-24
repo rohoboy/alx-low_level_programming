@@ -10,11 +10,10 @@
  */
 int check_num(char *str)
 {
-	/*Declaring variables*/
 	unsigned int count;
 
 	count = 0;
-	while (count < strlen(str)) /*count string*/
+	while (count < strlen(str))
 
 	{
 		if (!isdigit(str[count]))
@@ -42,7 +41,7 @@ int main(int argc, char *argv[])
 	int sum = 0;
 
 	count = 1;
-	while (count < argc) 
+	while (count < argc)
 	{
 		if (check_num(argv[count]))
 
