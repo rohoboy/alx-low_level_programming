@@ -3,9 +3,14 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-
+/**
+ * _strpbrk - function
+ * @s: input
+ * @accept: input
+ * Return: pointer
+ */
 char *_strpbrk(char *s, char *accept)
 {
-    return strpbrk(s, accept);
+	return (strpbrk(s, accept));
 }
 
