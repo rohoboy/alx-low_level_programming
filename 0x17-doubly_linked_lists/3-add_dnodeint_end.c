@@ -25,11 +25,11 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	while (temp->next)
 	{
-		swap = temp;
 		temp = temp->next;
-		temp->prev = swap;
 	}
 
+	new_node->prev = temp;
+	new_node->next = NULL;
 	temp->next = new_node;
 	return (new_node);
 }
